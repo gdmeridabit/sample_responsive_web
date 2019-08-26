@@ -1,34 +1,19 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Gwen</span>
-        <span class="font-weight-light">Merida</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn flat href="#about" target="_blank">
-        <span class="mr-2">About</span>
-      </v-btn>
-      <v-btn flat href="#skills" target="_blank">
-        <span class="mr-2">Skills</span>
-      </v-btn>
-      <v-btn flat href="#career" target="_blank">
-        <span class="mr-2">Career</span>
-      </v-btn>
-    </v-toolbar>
     <v-content>
-      <HelloWorld/>
+      <router-view></router-view>
     </v-content>
+    <BottomSheet/>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import BottomSheet from './components/BottomSheet';
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    BottomSheet
   },
   data() {
     return {
@@ -36,3 +21,10 @@ export default {
   }
 };
 </script>
+
+<style>
+  body {
+    background-image: url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2');
+    background-size: cover;
+  }
+</style>
