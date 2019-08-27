@@ -9,8 +9,15 @@
   "otherworks": "私の作品や記事をご覧ください",
   "ffm": "金融機関が信用調査を通じてクライアントをより詳しく知ることができるようにするWebプラットフォーム。ソフトエンジニアとして、プラットホームのフロントエンドを担当。このプロジェクトではフロントエンド開発のためにSpring MVCの技術を使いました。\n",
   "mls": "Mobile Loan Saverは公務員にお金を貸す金融機関のためのローンプラットフォームです。迅速かつ簡単なフロントエンド開発のためGroovy and Grailsの技術を使いました。また、GroovyとGrailsを使用して、データベースとフロントエンドを統合するWebサービスを作成しました。\n",
+  "c2p": "アプリのユーザーはアプリでビザのクレジットカードを接続できって、アプリがモバイルのNFCを使うことでお客さんはいくつか店に支払うことができます。責任は、開発者としてホワイトリストユーザーへのファイルの一括アッフロードの開発です。",
   "aspire": "Aspireは大学生のための授業料のクラウドファンディングプラットフォームです。このプラットフォーム作成の発注元の会社では、全てのプロジェクトでPHP言語を使用しています。だから、PHPのCodeIgniterフレームーワークを通してバックエンドとフロントエンドを開発しました。",
   "gcash": "モバイルウォレットアプリです。このアプリを使う人はアプリで送金することができて、プリペイドカードが買えて、別の店で支払うことができます。私はモバイル開発者として、iOSモバイル開発を担当し、Apple Storeでアプリをデプロイしました。",
-  "oberry": "ブロックチェンのチュートリアルマーケットプラットフォームです。チュートリアルの内容は研究して、サンプルアプリを開発して、Mediumにブロックチェーンのチュートリアルを書きました。スマートコントラクトを作成するには「Solidity」という言語を使って、フロントエンドを開発のために「Vue.js」という技術を使用しました。",
-  "bmethod": "A mobile wallet application. People who use this app can send money by app, buy a paid card, and pay at another store. As a mobile developer, I was responsible for iOS mobile development using the language “swift” and deployed the app in the Apple Store."
-}
+  "oberry": "ブロックチェンのチュートリアルマーケットプラットフォームです。開発者とコンテンツ筆者として、チュートリアルの内容のためにブロックチェーンに関して研究して、サンプルアプリを開発して、Mediumにチュートリアルの記事を書きました。スマートコントラクトを作成するには「Solidity」という言語を使って、フロントエンドを開発のために「Vue.js」という技術を使用しました。",
+  "bmethod": "A mobile wallet application. People who use this app can send money by app, buy a paid card, and pay at another store. As a mobile developer, I was responsible for iOS mobile development using the language “swift” and deployed the app in the Apple Store.",
+  "ffmdate": "2月 2013年",
+  "mlsdate": "3月 2013年",
+  "c2pdate": "1月 2013年",
+  "aspiredate": "4月 2016年",
+  "gcashdate": "4月 2017年",
+  "oberrydate": "1月 2019年",
+  "bmethoddate": "4月 2019年"}

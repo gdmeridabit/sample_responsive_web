@@ -2,13 +2,13 @@
   <v-container class="my-5">
     <v-layout text-xs-center px-3 py-3>
       <v-flex xs12>
-        <span class="display-2 font-weight-bold" id="skills">{{ $t('skill_title') }}</span>
+        <span class="title-font font-weight-bold" id="skills">{{ $t('skill_title') }}</span>
       </v-flex>
     </v-layout>
     <v-layout align-center justify-center px-3 py-3 row wrap>
       <v-flex xs12 mb-2>
         <v-card class="text-xs-center">
-          <v-card-title class="headline">
+          <v-card-title class="simple-font">
             {{ $t('webdev') }}
           </v-card-title>
           <v-layout text-xs-center px-3 py-3 row wrap>
@@ -83,7 +83,7 @@
       </v-flex>
       <v-flex xs12 mb-2>
         <v-card class="text-xs-center">
-          <v-card-title class="headline">
+          <v-card-title class="simple-font">
             {{ $t('backdev') }}
           </v-card-title>
           <v-layout text-xs-center px-3 py-3 row wrap>
@@ -113,7 +113,7 @@
       </v-flex>
       <v-flex xs12 mb-2>
         <v-card class="text-xs-center">
-          <v-card-title class="headline">
+          <v-card-title class="simple-font">
             {{ $t('mobdev') }}
           </v-card-title>
           <v-layout text-xs-center px-3 py-3 row wrap>

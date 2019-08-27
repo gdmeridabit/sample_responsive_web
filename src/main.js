@@ -7,6 +7,7 @@ import Skill from "./components/Skills";
 import PageNotFound from "./components/PageNotFound"
 import VueRouter from 'vue-router';
 import i18n from './i18n'
+import '../stylus/main.styl'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);

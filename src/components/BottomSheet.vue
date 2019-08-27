@@ -1,9 +1,9 @@
 <template>
-  <v-card flat fixed>
+  <v-card flat>
     <v-bottom-nav
             :active.sync="bottomNav"
             :value="true"
-            absolute
+            fixed
             grow
             color="white"
     >
