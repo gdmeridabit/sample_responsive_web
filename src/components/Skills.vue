@@ -1,142 +1,124 @@
 <template>
-  <v-container class="my-5">
+  <v-container fluid grid-list-md>
     <v-layout text-xs-center px-3 py-3>
       <v-flex xs12>
         <span class="title-font font-weight-bold" id="skills">{{ $t('skill_title') }}</span>
       </v-flex>
     </v-layout>
-    <v-layout align-center justify-center px-3 py-3 row wrap>
-      <v-flex xs12 mb-2>
-        <v-card class="text-xs-center">
-          <v-card-title class="simple-font">
-            {{ $t('webdev') }}
-          </v-card-title>
-          <v-layout text-xs-center px-3 py-3 row wrap>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png"
-                     alt="avatar">
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Vue.js</p>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img src="https://cdn.auth0.com/blog/react-js/react.png" alt="avatar">
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Reactjs</p>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
-                        alt="avatar"
-                >
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Angular 7</p>
-            </v-flex>
-          </v-layout>
-          <v-layout text-xs-center px-3 py-3 row wrap>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img
-                        src="https://miro.medium.com/max/1200/1*O68LbDvD5Dcsnez73M7v4Q.png"
-                        alt="avatar"
-                >
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Spring Boot</p>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img
-                        src="https://www.stickpng.com/assets/images/58480e35cef1014c0b5e4920.png"
-                        alt="avatar"
-                >
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Laravel</p>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img
-                        src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png"
-                        alt="avatar"
-                >
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">HTML5</p>
-            </v-flex>
-          </v-layout>
-          <v-layout text-xs-center px-3 py-3 row wrap>
-            <v-flex lg4 sm12 xs12>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img
-                        src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png"
-                        alt="avatar"
-                >
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">CSS</p>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-            </v-flex>
-          </v-layout>
-        </v-card>
-      </v-flex>
-      <v-flex xs12 mb-2>
-        <v-card class="text-xs-center">
-          <v-card-title class="simple-font">
-            {{ $t('backdev') }}
-          </v-card-title>
-          <v-layout text-xs-center px-3 py-3 row wrap>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img src="https://tutorialedge.net/images/node.png" alt="avatar">
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Node.js</p>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img
-                        src="https://cdn.freebiesupply.com/logos/large/2x/mysql-6-logo-png-transparent.png"
-                        alt="avatar"
-                >
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">MySQL</p>
-            </v-flex>
-            <v-flex lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <img src="https://go.neo4j.com/rs/710-RRC-335/images/neo4j_logo_globe.png" alt="avatar">
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Neo4j</p>
-            </v-flex>
-          </v-layout>
-        </v-card>
-      </v-flex>
-      <v-flex xs12 mb-2>
-        <v-card class="text-xs-center">
-          <v-card-title class="simple-font">
-            {{ $t('mobdev') }}
-          </v-card-title>
-          <v-layout text-xs-center px-3 py-3 row wrap>
-            <v-flex lg4 offset-lg4 sm12 xs12>
-              <v-avatar size="150" color="grey lighten-4">
-                <v-img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/1138px-Swift_logo.svg.png"
-                        alt="avatar"
-                        width="10%"
-                ></v-img>
-              </v-avatar>
-              <p class="subheading font-weight mt-2 black--text">Swift</p>
-            </v-flex>
-          </v-layout>
-        </v-card>
-      </v-flex>
-    </v-layout>
+    <v-data-iterator
+            :items="items"
+            :rows-per-page-items="rowsPerPageItems"
+            :pagination.sync="pagination"
+            content-tag="v-layout"
+            hide-actions
+            row
+            wrap
+    >
+      <template v-slot:item="props">
+          <v-flex
+                  xs12
+                  sm6
+                  md4
+                  lg3
+          >
+            <v-card>
+              <v-card-title class="subheading font-weight-bold">{{ props.item.name }}</v-card-title>
+
+              <v-divider></v-divider>
+
+              <v-list dense>
+                <v-list-tile>
+                  <v-list-tile-content>Calories:</v-list-tile-content>
+                  <v-list-tile-content class="align-end">{{ props.item.calories }}</v-list-tile-content>
+                </v-list-tile>
+
+                <v-list-tile>
+                  <v-list-tile-content>Fat:</v-list-tile-content>
+                  <v-list-tile-content class="align-end">{{ props.item.fat }}</v-list-tile-content>
+                </v-list-tile>
+
+                <v-list-tile>
+                  <v-list-tile-content>Carbs:</v-list-tile-content>
+                  <v-list-tile-content class="align-end">{{ props.item.carbs }}</v-list-tile-content>
+                </v-list-tile>
+
+                <v-list-tile>
+                  <v-list-tile-content>Protein:</v-list-tile-content>
+                  <v-list-tile-content class="align-end">{{ props.item.protein }}</v-list-tile-content>
+                </v-list-tile>
+
+                <v-list-tile>
+                  <v-list-tile-content>Sodium:</v-list-tile-content>
+                  <v-list-tile-content class="align-end">{{ props.item.sodium }}</v-list-tile-content>
+                </v-list-tile>
+
+                <v-list-tile>
+                  <v-list-tile-content>Calcium:</v-list-tile-content>
+                  <v-list-tile-content class="align-end">{{ props.item.calcium }}</v-list-tile-content>
+                </v-list-tile>
+
+                <v-list-tile>
+                  <v-list-tile-content>Iron:</v-list-tile-content>
+                  <v-list-tile-content class="align-end">{{ props.item.iron }}</v-list-tile-content>
+                </v-list-tile>
+              </v-list>
+            </v-card>
+          </v-flex>
+      </template>
+    </v-data-iterator>
   </v-container>
 </template>
 
 <script>
   export default {
-    data: () => ({}),
+    data: () => ({
+      rowsPerPageItems: [4, 8, 12],
+      pagination: {
+        rowsPerPage: 4
+      },
+      items: [
+        {
+          name: 'Frozen Yogurt',
+          calories: 159,
+          fat: 6.0,
+          carbs: 24,
+          protein: 4.0,
+          sodium: 87,
+          calcium: '14%',
+          iron: '1%'
+        },
+        {
+          name: 'Ice cream sandwich',
+          calories: 237,
+          fat: 9.0,
+          carbs: 37,
+          protein: 4.3,
+          sodium: 129,
+          calcium: '8%',
+          iron: '1%'
+        },
+        {
+          name: 'Eclair',
+          calories: 262,
+          fat: 16.0,
+          carbs: 23,
+          protein: 6.0,
+          sodium: 337,
+          calcium: '6%',
+          iron: '7%'
+        },
+        {
+          name: 'Cupcake',
+          calories: 305,
+          fat: 3.7,
+          carbs: 67,
+          protein: 4.3,
+          sodium: 413,
+          calcium: '3%',
+          iron: '8%'
+        }
+      ]
+    }),
     beforeMount() {
       this.$i18n.locale = this.$route.params.lang;
     }

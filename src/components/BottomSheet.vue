@@ -8,7 +8,7 @@
             color="white"
     >
       <v-btn
-              value=""
+              value="about"
               flat
               :to="'/' + this.$route.params.lang"
       >
@@ -33,6 +33,14 @@
         <span>{{ $t('career_title') }}</span>
         <v-icon>work</v-icon>
       </v-btn>
+      <v-btn
+              value="others"
+              flat
+              :to="'/' + this.$route.params.lang + '/others'"
+      >
+        <span>{{ $t('others_title') }}</span>
+        <v-icon>folder_special</v-icon>
+      </v-btn>
     </v-bottom-nav>
   </v-card>
 </template>
@@ -41,7 +49,7 @@
   export default {
     data() {
       return {
-        bottomNav: ''
+        bottomNav: 'about'
       }
     }
   }

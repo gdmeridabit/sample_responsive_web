@@ -8,15 +8,17 @@ import PageNotFound from "./components/PageNotFound"
 import VueRouter from 'vue-router';
 import i18n from './i18n'
 import '../stylus/main.styl'
+import Others from "./components/Others";
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 
 const routes = [
-  { path: "*", component: PageNotFound },
-  { path: '/:lang', component: AboutMe },
-  { path: '/:lang/career', component: Career },
-  { path: '/:lang/skill', component: Skill },
+  { path: "*", name: 'error', component: PageNotFound },
+  { path: '/:lang', name: 'about', component: AboutMe },
+  { path: '/:lang/career', name: 'career', component: Career },
+  { path: '/:lang/skill', name: 'skill', component: Skill },
+  { path: '/:lang/others', name: 'others', component: Others },
 ];
 
 const router = new VueRouter({

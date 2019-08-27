@@ -2,6 +2,7 @@
   "about_title": "About Me",
   "career_title": "Career",
   "skill_title": "Skill Sets",
+  "others_title": "Other Projects",
   "intro": "Hello, my name is <b>Gwen Danielle Merida.</b><br/>\n          I'm a <b>Software Developer.</b><br/>\n          Most of my projects focuses on <b>Financial Technologies.</b><br/>\n          I sometimes write <b>articles/posts</b> to help the coding community.<br/>\n          When coding, I always strive to write <b>elegant</b> and <b>efficient</b> code.",
   "webdev": "Frontend Development",
   "backdev": "Backend Development",
