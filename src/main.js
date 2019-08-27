@@ -4,15 +4,18 @@ import App from './App.vue';
 import AboutMe from "./components/AboutMe";
 import Career from "./components/Career";
 import Skill from "./components/Skills";
+import PageNotFound from "./components/PageNotFound"
 import VueRouter from 'vue-router';
+import i18n from './i18n'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: AboutMe },
-  { path: '/career', component: Career },
-  { path: '/skill', component: Skill },
+  { path: "*", component: PageNotFound },
+  { path: '/:lang', component: AboutMe },
+  { path: '/:lang/career', component: Career },
+  { path: '/:lang/skill', component: Skill },
 ];
 
 const router = new VueRouter({
@@ -22,5 +25,6 @@ const router = new VueRouter({
 
 new Vue({
   render: h => h(App),
-  router,
+  i18n,
+  router
 }).$mount('#app');

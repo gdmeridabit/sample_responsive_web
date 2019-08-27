@@ -1,0 +1,16 @@
+{
+  "about_title": "私について",
+  "career_title": "キャリア",
+  "skill_title": "スキル",
+  "intro": "こんにちは<b>グウェン・ダニエル・メリダ</b>です。<br/>\n<b>ソフトウェアエンジニア</b>です。<br/>\n私のプロジェクトのほとんどは<b>「Financial Technologies」</b>に焦点を当てる。<br/>\n私はコーディングコミュニティを助けることのために時々学んだ技術が<b>記事</b>を書く。<br/>\n常に<b>エレガントで効率的な</b>コードを書くよう努めています。",
+  "webdev": "フロントエンド開発",
+  "backdev": "バックエンド 開発",
+  "mobdev": "モバイル 開発",
+  "otherworks": "私の作品や記事をご覧ください",
+  "ffm": "金融機関が信用調査を通じてクライアントをより詳しく知ることができるようにするWebプラットフォーム。ソフトエンジニアとして、プラットホームのフロントエンドを担当。このプロジェクトではフロントエンド開発のためにSpring MVCの技術を使いました。\n",
+  "mls": "Mobile Loan Saverは公務員にお金を貸す金融機関のためのローンプラットフォームです。迅速かつ簡単なフロントエンド開発のためGroovy and Grailsの技術を使いました。また、GroovyとGrailsを使用して、データベースとフロントエンドを統合するWebサービスを作成しました。\n",
+  "aspire": "Aspireは大学生のための授業料のクラウドファンディングプラットフォームです。このプラットフォーム作成の発注元の会社では、全てのプロジェクトでPHP言語を使用しています。だから、PHPのCodeIgniterフレームーワークを通してバックエンドとフロントエンドを開発しました。",
+  "gcash": "モバイルウォレットアプリです。このアプリを使う人はアプリで送金することができて、プリペイドカードが買えて、別の店で支払うことができます。私はモバイル開発者として、iOSモバイル開発を担当し、Apple Storeでアプリをデプロイしました。",
+  "oberry": "ブロックチェンのチュートリアルマーケットプラットフォームです。チュートリアルの内容は研究して、サンプルアプリを開発して、Mediumにブロックチェーンのチュートリアルを書きました。スマートコントラクトを作成するには「Solidity」という言語を使って、フロントエンドを開発のために「Vue.js」という技術を使用しました。",
+  "bmethod": "A mobile wallet application. People who use this app can send money by app, buy a paid card, and pay at another store. As a mobile developer, I was responsible for iOS mobile development using the language “swift” and deployed the app in the Apple Store."
+}

@@ -4,35 +4,33 @@
             :active.sync="bottomNav"
             :value="true"
             absolute
-            color="transparent"
+            grow
+            color="white"
     >
       <v-btn
-              color="teal"
+              value=""
               flat
-              value="recent"
-              to="/"
+              :to="'/' + this.$route.params.lang"
       >
-        <span>About Me</span>
+        <span>{{ $t('about_title') }}</span>
         <v-icon>sentiment_very_satisfied</v-icon>
       </v-btn>
 
       <v-btn
-              color="teal"
+              value="skill"
               flat
-              value="favorites"
-              to="/skill"
+              :to="'/' + this.$route.params.lang + '/skill'"
       >
-        <span>Skills</span>
+        <span>{{ $t('skill_title') }}</span>
         <v-icon>build</v-icon>
       </v-btn>
 
       <v-btn
-              color="teal"
+              value="career"
               flat
-              value="nearby"
-              to="/career"
+              :to="'/' + this.$route.params.lang + '/career'"
       >
-        <span>Career</span>
+        <span>{{ $t('career_title') }}</span>
         <v-icon>work</v-icon>
       </v-btn>
     </v-bottom-nav>
@@ -43,7 +41,7 @@
   export default {
     data() {
       return {
-        bottomNav: 'recent'
+        bottomNav: ''
       }
     }
   }

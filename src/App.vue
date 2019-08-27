@@ -21,10 +21,3 @@ export default {
   }
 };
 </script>
-
-<style>
-  body {
-    background-image: url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2');
-    background-size: cover;
-  }
-</style>
