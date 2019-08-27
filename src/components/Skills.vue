@@ -1,71 +1,47 @@
 <template>
-  <v-container fluid grid-list-md>
+  <v-container mb-5>
     <v-layout text-xs-center px-3 py-3>
       <v-flex xs12>
         <span class="title-font font-weight-bold" id="skills">{{ $t('skill_title') }}</span>
       </v-flex>
     </v-layout>
-    <v-data-iterator
-            :items="items"
-            :rows-per-page-items="rowsPerPageItems"
-            :pagination.sync="pagination"
-            content-tag="v-layout"
-            hide-actions
-            row
-            wrap
-    >
-      <template v-slot:item="props">
-          <v-flex
-                  xs12
-                  sm6
-                  md4
-                  lg3
-          >
-            <v-card>
-              <v-card-title class="subheading font-weight-bold">{{ props.item.name }}</v-card-title>
-
-              <v-divider></v-divider>
-
-              <v-list dense>
-                <v-list-tile>
-                  <v-list-tile-content>Calories:</v-list-tile-content>
-                  <v-list-tile-content class="align-end">{{ props.item.calories }}</v-list-tile-content>
-                </v-list-tile>
-
-                <v-list-tile>
-                  <v-list-tile-content>Fat:</v-list-tile-content>
-                  <v-list-tile-content class="align-end">{{ props.item.fat }}</v-list-tile-content>
-                </v-list-tile>
-
-                <v-list-tile>
-                  <v-list-tile-content>Carbs:</v-list-tile-content>
-                  <v-list-tile-content class="align-end">{{ props.item.carbs }}</v-list-tile-content>
-                </v-list-tile>
-
-                <v-list-tile>
-                  <v-list-tile-content>Protein:</v-list-tile-content>
-                  <v-list-tile-content class="align-end">{{ props.item.protein }}</v-list-tile-content>
-                </v-list-tile>
-
-                <v-list-tile>
-                  <v-list-tile-content>Sodium:</v-list-tile-content>
-                  <v-list-tile-content class="align-end">{{ props.item.sodium }}</v-list-tile-content>
-                </v-list-tile>
-
-                <v-list-tile>
-                  <v-list-tile-content>Calcium:</v-list-tile-content>
-                  <v-list-tile-content class="align-end">{{ props.item.calcium }}</v-list-tile-content>
-                </v-list-tile>
-
-                <v-list-tile>
-                  <v-list-tile-content>Iron:</v-list-tile-content>
-                  <v-list-tile-content class="align-end">{{ props.item.iron }}</v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </v-card>
-          </v-flex>
-      </template>
-    </v-data-iterator>
+    <v-layout row wrap fill-height>
+      <v-flex
+              v-for="(data, index) in skills" :key="index"
+              xs12
+              sm6
+              md4
+              lg4
+              pa-2
+      >
+        <v-card v-if="data !== null" height="100%">
+          <v-card-title class="simple-font font-weight-bold">{{ data.name }}</v-card-title>
+          <v-divider></v-divider>
+          <v-list dense v-for="(items, index) in data.data" :key="index">
+            <v-list-tile>
+              <v-layout row>
+                <v-flex xs5>
+                  <v-list-tile-content class="title font-weight-light">{{ items.name }}</v-list-tile-content>
+                </v-flex>
+                <v-flex xs2>
+                  <v-list-tile-content class="simple-sm-font font-weight-light blue--text">{{ items.value }}%</v-list-tile-content>
+                </v-flex>
+                <v-flex xs5>
+                  <v-list-tile-content>
+                    <v-progress-linear
+                            color="warning"
+                            height="20"
+                            :value="items.value"
+                    >
+                    </v-progress-linear>
+                  </v-list-tile-content>
+                </v-flex>
+              </v-layout>
+            </v-list-tile>
+          </v-list>
+        </v-card>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
@@ -76,46 +52,134 @@
       pagination: {
         rowsPerPage: 4
       },
-      items: [
+      skills: [
         {
-          name: 'Frozen Yogurt',
-          calories: 159,
-          fat: 6.0,
-          carbs: 24,
-          protein: 4.0,
-          sodium: 87,
-          calcium: '14%',
-          iron: '1%'
+          name: 'Frontend Development',
+          data: [
+            {
+              name: 'HTML5',
+              value: 90
+            },
+            {
+              name: 'CSS',
+              value: 90
+            },
+            {
+              name: 'Vue.js',
+              value: 70
+            },
+            {
+              name: 'Reactjs',
+              value: 60
+            },
+            {
+              name: 'Angular',
+              value: 60
+            },
+            {
+              name: 'Laravel',
+              value: 80
+            },
+            {
+              name: 'Wordpress',
+              value: 70
+            }
+          ]
         },
         {
-          name: 'Ice cream sandwich',
-          calories: 237,
-          fat: 9.0,
-          carbs: 37,
-          protein: 4.3,
-          sodium: 129,
-          calcium: '8%',
-          iron: '1%'
+          name: 'Backend Development',
+          data: [
+            {
+              name: 'Node.js',
+              value: 50
+            },
+            {
+              name: 'MySQL',
+              value: 50
+            },
+            {
+              name: 'Neo4j',
+              value: 40
+            },
+          ]
         },
         {
-          name: 'Eclair',
-          calories: 262,
-          fat: 16.0,
-          carbs: 23,
-          protein: 6.0,
-          sodium: 337,
-          calcium: '6%',
-          iron: '7%'
+          name: 'Mobile Development',
+          data: [
+            {
+              name: 'Swift',
+              value: 70
+            },
+            {
+              name: 'React Native',
+              value: 50
+            },
+          ]
         },
         {
-          name: 'Cupcake',
-          calories: 305,
-          fat: 3.7,
-          carbs: 67,
-          protein: 4.3,
-          sodium: 413,
-          calcium: '3%',
-          iron: '8%'
+          name: 'Operating System',
+          data: [
+            {
+              name: 'Mac OS',
+              value: 90
+            },
+            {
+              name: 'Ubuntu',
+              value: 70
+            },
+            {
+              name: 'Windows',
+              value: 80
+            },
+          ]
+        },
+        {
+          name: 'Version Control',
+          data: [
+            {
+              name: 'Git',
+              value: 90
+            },
+            {
+              name: 'SVN',
+              value: 70
+            },
+          ]
+        },
+        {
+          name: 'Graphic Editing',
+          data: [
+            {
+              name: 'Photoshop',
+              value: 60
+            },
+            {
+              name: 'Illustrator',
+              value: 60
+            },
+            {
+              name: 'Sketch',
+              value: 40
+            },
+          ]
+        },
+        null,
+        {
+          name: 'Issue Tracker',
+          data: [
+            {
+              name: 'Jira',
+              value: 70
+            },
+            {
+              name: 'Github',
+              value: 80
+            },
+            {
+              name: 'Redmine',
+              value: 70
+            },
+          ]
         }
       ]
     }),

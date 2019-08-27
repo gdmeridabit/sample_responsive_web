@@ -18,8 +18,8 @@
       </v-flex>
     </v-layout>
     <v-divider class="mb-5"></v-divider>
-    <v-layout class="my-5" row>
-      <v-flex xs12 mb-5 text-xs-center hidden-sm-and-down>
+    <v-layout align-content justify-center fill-height row wrap class="my-5">
+      <v-flex xs12 text-xs-center hidden-sm-and-down mb-5>
         <p class="simple-font mt-5">{{ $t('otherworks') }}</p>
         <a href="https://github.com/gdmeridabit" target="_blank" class="mx-5 grey--text">
           <i class="fab fa-github" style="font-size: 5em"></i>
@@ -34,7 +34,7 @@
           <i class="fab fa-medium-m grey--text" style="font-size: 5em"></i>
         </a>
       </v-flex>
-      <v-flex xs12 mb-5 text-xs-center hidden-md-and-up>
+      <v-flex xs12 text-xs-center hidden-md-and-up mb-5>
         <p class="simple-font mt-5">{{ $t('otherworks') }}</p>
         <a href="https://github.com/gdmeridabit" target="_blank" class="mx-2 grey--text">
           <i class="fab fa-github" style="font-size: 4em"></i>
@@ -49,13 +49,11 @@
           <i class="fab fa-medium-m grey--text" style="font-size: 4em"></i>
         </a>
       </v-flex>
-    </v-layout>
-    <v-layout my-5 px-5 class="text-xs-center" row wrap>
-      <v-flex xs12 mt-4 mb-5 hidden-sm-and-down>
+      <v-flex xs12 text-xs-center hidden-sm-and-down my-5>
         <p class="title font-weight-light mb-4">The scope of my work is more focus on the frontend:<b> single pages
           apps(MVC,
           MVVM), coding layouts, HTML, CSS and Javascript.</b></p>
-        <v-layout class="mb-5">
+        <v-layout>
           <v-flex lg4 xs12>
             <v-progress-circular
                     :value="80"
@@ -100,7 +98,7 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12 my-4 hidden-md-and-up>
+      <v-flex xs12 text-xs-center hidden-md-and-up my-5>
         <p class="title font-weight-light mb-4">The scope of my work is more focus on the frontend:<b> single pages
           apps(MVC,
           MVVM), coding layouts, HTML, CSS and Javascript.</b></p>
@@ -142,6 +140,17 @@
             <span class="title font-weight-light">{{ $t('mobdev') }}</span>
           </v-flex>
         </v-layout>
+      </v-flex>
+    </v-layout>
+    <v-divider class="mb-5"></v-divider>
+    <v-layout align-content justify-center fill-height row wrap class="my-5">
+      <v-flex xs12 text-xs-center mb-5>
+        <span class="simple-md-font">Don't be a stranger!</span><br/>
+        <span class="title font-weight-light">Feel free to get in touch with me. I am open to discuss new projects and creative ideas or be part of your visions.</span>
+      </v-flex>
+      <v-flex xs12 text-xs-center mb-5>
+        <span class="simple-font"><i class="fas fa-envelope mr-5"></i>gwen.merida02@gmail.com</span><br/>
+        <span class="simple-font"><i class="fab fa-twitter mr-5"></i>@gwenskiesHere</span><br/>
       </v-flex>
     </v-layout>
   </v-container>

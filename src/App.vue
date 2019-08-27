@@ -30,7 +30,15 @@ export default {
   }
   .simple-sm-font {
     font-family: 'Caveat', 'M PLUS Rounded 1c', sans-serif, cursive;
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+  .simple-md-font {
+    font-family: 'Caveat', 'M PLUS Rounded 1c', sans-serif, cursive;
+    font-size: 4.5em;
+  }
+  .simple-lg-font {
+    font-family: 'Caveat', 'M PLUS Rounded 1c', sans-serif, cursive;
+    font-size: 9em;
   }
   .simple-font {
     font-family: 'Caveat', 'M PLUS Rounded 1c', sans-serif, cursive;
