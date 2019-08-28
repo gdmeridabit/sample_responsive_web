@@ -8,15 +8,17 @@
     <v-divider></v-divider>
     <v-layout row wrap text-xs-center py-3>
       <v-flex lg4 sm12 xs12 mb-3 px-2>
-        <v-card>
+        <v-card height="100%">
           <v-card-media><v-img :src="img1"></v-img></v-card-media>
           <v-card-title>Okutara</v-card-title>
           <v-card-text>Okutara is blog site</v-card-text>
         </v-card>
       </v-flex>
       <v-flex lg4 sm12 xs12 mb-3 px-2>
-        <v-card>
-          <v-card-media><v-img :src="img1"></v-img></v-card-media>
+        <v-card height="100%">
+          <v-card-media>
+            <v-img src="https://portfolio-gwen.s3.amazonaws.com/blockwallet.png"></v-img>
+          </v-card-media>
           <v-card-title>Block Wallet</v-card-title>
           <v-card-text>Block Wallet</v-card-text>
         </v-card>

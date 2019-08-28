@@ -18,6 +18,11 @@ export default {
   data() {
     return {
     };
+  },
+  beforeMount() {
+    if(this.$route.params.lang === undefined) {
+      this.$router.push('/en')
+    }
   }
 };
 </script>

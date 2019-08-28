@@ -16,43 +16,13 @@
       <v-flex text-xs-center xs12 mb-5 hidden-sm-and-down>
         <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="3%" style="left: 50%"></v-img>
       </v-flex>
-      <v-flex text-xs-center xs12 mb-5 hidden-md-and-up>
-        <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="10%" style="left: 50%"></v-img>
+      <v-flex text-xs-center xs12 hidden-md-and-up>
+        <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="15%" style="left: 50%"></v-img>
       </v-flex>
     </v-layout>
     <v-layout align-content justify-center fill-height row wrap class="mb-5">
       <v-flex xs12 text-xs-center hidden-sm-and-down mb-5>
-        <p class="simple-font">{{ $t('otherworks') }}</p>
-        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-5 grey--text">
-          <i class="fab fa-github" style="font-size: 5em"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/gwenmerida/" target="_blank" class="mx-5 grey--text">
-          <i class="fab fa-linkedin-in grey--text" style="font-size: 5em"></i>
-        </a>
-        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-5 grey--text">
-          <i class="fas fa-i-cursor grey--text" style="font-size: 5em"></i>
-        </a>
-        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-5 grey--text">
-          <i class="fab fa-medium-m grey--text" style="font-size: 5em"></i>
-        </a>
-      </v-flex>
-      <v-flex xs12 text-xs-center hidden-md-and-up mb-5>
-        <p class="simple-font mt-5">{{ $t('otherworks') }}</p>
-        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-2 grey--text">
-          <i class="fab fa-github" style="font-size: 4em"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/gwenmerida/" target="_blank" class="mx-2 grey--text">
-          <i class="fab fa-linkedin-in grey--text" style="font-size: 4em"></i>
-        </a>
-        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-2 grey--text">
-          <i class="fas fa-i-cursor grey--text" style="font-size: 4em"></i>
-        </a>
-        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-2 grey--text">
-          <i class="fab fa-medium-m grey--text" style="font-size: 4em"></i>
-        </a>
-      </v-flex>
-      <v-flex xs12 text-xs-center hidden-sm-and-down my-5>
-        <p class="title font-weight-light mb-4">The scope of my work is more focus on the frontend:<b> single pages
+        <p class="title font-weight-light">The scope of my work is more focus on the frontend:<b> single pages
           apps(MVC,
           MVVM), coding layouts, HTML, CSS and Javascript.</b></p>
         <v-layout>
@@ -100,8 +70,8 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12 text-xs-center hidden-md-and-up my-5>
-        <p class="title font-weight-light mb-4">The scope of my work is more focus on the frontend:<b> single pages
+      <v-flex xs12 text-xs-center hidden-md-and-up mb-5>
+        <p class="title font-weight-light">The scope of my work is more focus on the frontend:<b> single pages
           apps(MVC,
           MVVM), coding layouts, HTML, CSS and Javascript.</b></p>
         <v-layout row wrap>
@@ -143,6 +113,30 @@
           </v-flex>
         </v-layout>
       </v-flex>
+      <v-flex xs12 text-xs-center hidden-sm-and-down mt-5>
+        <p class="simple-font">{{ $t('otherworks') }}</p>
+        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-5">
+          <i class="fab fa-github" style="font-size: 5em"></i>
+        </a>
+        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-5">
+          <i class="fas fa-i-cursor" style="font-size: 5em"></i>
+        </a>
+        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-5">
+          <i class="fab fa-medium-m" style="font-size: 5em"></i>
+        </a>
+      </v-flex>
+      <v-flex xs12 text-xs-center hidden-md-and-up mt-5>
+        <p class="simple-font">{{ $t('otherworks') }}</p>
+        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-4">
+          <i class="fab fa-github" style="font-size: 4em"></i>
+        </a>
+        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-4">
+          <i class="fas fa-i-cursor grey--text" style="font-size: 4em"></i>
+        </a>
+        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-4">
+          <i class="fab fa-medium-m grey--text" style="font-size: 4em"></i>
+        </a>
+      </v-flex>
     </v-layout>
     <v-divider class="mb-5"></v-divider>
     <v-layout align-content justify-center fill-height row wrap class="my-5">
@@ -150,13 +144,17 @@
         <span class="simple-md-font">Don't be a stranger!</span><br/>
         <span class="title font-weight-light">Feel free to get in touch with me. I am open to discuss new projects and creative ideas or be part of your visions.</span>
       </v-flex>
-      <v-flex xs12 text-xs-center mb-5>
-        <i class="fas fa-envelope" style="font-size: 3em"></i>
-        <span class="simple-font"> gwen.merida02@gmail.com</span><br/>
+      <v-flex xs12 text-xs-center mb-1>
+        <i class="fas fa-envelope" style="font-size: 1.5em"></i>
+        <span class="simple-sm-font"> gwen.merida02@gmail.com</span><br/>
       </v-flex>
-      <v-flex xs12 text-xs-center mb-5>
-        <i class="fab fa-twitter" style="font-size: 3em"></i>
-        <span class="simple-font"> @gwenskiesHere</span><br/>
+      <v-flex xs12 text-xs-center mb-1>
+        <i class="fab fa-twitter" style="font-size: 1.5em"></i>
+        <span class="simple-sm-font"> @gwenskiesHere</span><br/>
+      </v-flex>
+      <v-flex xs12 text-xs-center mb-1>
+        <i class="fab fa-linkedin-in" style="font-size: 1.5em"></i>
+        <span class="simple-sm-font"> https://www.linkedin.com/in/gwenmerida/</span><br/>
       </v-flex>
     </v-layout>
   </v-container>

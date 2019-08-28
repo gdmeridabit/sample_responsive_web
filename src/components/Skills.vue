@@ -83,6 +83,10 @@
             {
               name: 'Wordpress',
               value: 70
+            },
+            {
+              name: 'Spring Boot',
+              value: 60
             }
           ]
         },
