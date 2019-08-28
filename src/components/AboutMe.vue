@@ -13,8 +13,11 @@
         </v-avatar>
         <p class="title font-weight-thin mt-3" v-html="$t('intro')"></p>
       </v-flex>
-      <v-flex text-xs-center xs12 mb-5>
+      <v-flex text-xs-center xs12 mb-5 hidden-sm-and-down>
         <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="3%" style="left: 50%"></v-img>
+      </v-flex>
+      <v-flex text-xs-center xs12 mb-5 hidden-md-and-up>
+        <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="10%" style="left: 50%"></v-img>
       </v-flex>
     </v-layout>
     <v-layout align-content justify-center fill-height row wrap class="mb-5">
