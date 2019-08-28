@@ -14,7 +14,7 @@
   "aspire": "Aspireは大学生のための授業料のクラウドファンディングプラットフォームです。このプラットフォーム作成の発注元の会社では、全てのプロジェクトでPHP言語を使用しています。だから、PHPのCodeIgniterフレームーワークを通してバックエンドとフロントエンドを開発しました。",
   "gcash": "モバイルウォレットアプリです。このアプリを使う人はアプリで送金することができて、プリペイドカードが買えて、別の店で支払うことができます。私はモバイル開発者として、iOSモバイル開発を担当し、Apple Storeでアプリをデプロイしました。",
   "oberry": "ブロックチェンのチュートリアルマーケットプラットフォームです。開発者とコンテンツ筆者として、チュートリアルの内容のためにブロックチェーンに関して研究して、サンプルアプリを開発して、Mediumにチュートリアルの記事を書きました。スマートコントラクトを作成するには「Solidity」という言語を使って、フロントエンドを開発のために「Vue.js」という技術を使用しました。",
-  "bmethod": "A mobile wallet application. People who use this app can send money by app, buy a paid card, and pay at another store. As a mobile developer, I was responsible for iOS mobile development using the language “swift” and deployed the app in the Apple Store.",
+  "bmethod": "このアプリは日本の会社で働く外国人の日本語レベルを計っています。フロントフロントエンドのために「Vue.js」という言語を使って、「AWS」というサーバーにデプロイしています。",
   "ffmdate": "2月 2013年",
   "mlsdate": "3月 2013年",
   "c2pdate": "1月 2016年",

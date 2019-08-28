@@ -1,26 +1,25 @@
 <template>
   <v-container fluid>
     <v-layout row wrap align-content justify-center fill-height id="about" style="height: 100vh;">
-      <v-flex text-xs-center xs12 mb-3>
+      <v-flex text-xs-center xs12>
         <span class="font-weight-bold title-font">{{ $t('about_title') }}</span>
       </v-flex>
-      <v-flex text-xs-center xs12 mb-5>
+      <v-flex text-xs-center xs12>
         <v-avatar size="250" color="grey lighten-4">
           <img
                   src="https://portfolio-gwen.s3.amazonaws.com/50988163_10213734001079444_2817855097181044736_n.jpg"
                   alt="avatar"
           >
         </v-avatar>
-        <p class="title font-weight-thin my-5" v-html="$t('intro')"></p>
+        <p class="title font-weight-thin mt-3" v-html="$t('intro')"></p>
       </v-flex>
-      <v-flex text-xs-center xs12 mb-3>
-        <i class="fas fa-angle-double-down" style="font-size: 3em"></i>
+      <v-flex text-xs-center xs12 mb-5>
+        <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="3%" style="left: 50%"></v-img>
       </v-flex>
     </v-layout>
-    <v-divider class="mb-5"></v-divider>
-    <v-layout align-content justify-center fill-height row wrap class="my-5">
+    <v-layout align-content justify-center fill-height row wrap class="mb-5">
       <v-flex xs12 text-xs-center hidden-sm-and-down mb-5>
-        <p class="simple-font mt-5">{{ $t('otherworks') }}</p>
+        <p class="simple-font">{{ $t('otherworks') }}</p>
         <a href="https://github.com/gdmeridabit" target="_blank" class="mx-5 grey--text">
           <i class="fab fa-github" style="font-size: 5em"></i>
         </a>
@@ -149,8 +148,12 @@
         <span class="title font-weight-light">Feel free to get in touch with me. I am open to discuss new projects and creative ideas or be part of your visions.</span>
       </v-flex>
       <v-flex xs12 text-xs-center mb-5>
-        <span class="simple-font"><i class="fas fa-envelope mr-5"></i>gwen.merida02@gmail.com</span><br/>
-        <span class="simple-font"><i class="fab fa-twitter mr-5"></i>@gwenskiesHere</span><br/>
+        <i class="fas fa-envelope" style="font-size: 3em"></i>
+        <span class="simple-font"> gwen.merida02@gmail.com</span><br/>
+      </v-flex>
+      <v-flex xs12 text-xs-center mb-5>
+        <i class="fab fa-twitter" style="font-size: 3em"></i>
+        <span class="simple-font"> @gwenskiesHere</span><br/>
       </v-flex>
     </v-layout>
   </v-container>

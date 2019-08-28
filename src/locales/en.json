@@ -14,7 +14,7 @@
   "aspire": "Aspire is a crowdfunding platform to fund university students tuition fee. As part of the team, I'm involve in from planning to deployment. We used PHP's CodeIgniter framework to develop the backend and frontend of the application.",
   "gcash": "A Mobile Wallet App. People who use GCash can send money, buy a mobile load, and pay at partnered stores by scanning the store qr code. As a mobile developer, I was responsible for iOS mobile development using the language “swift” and deployed the app in the Apple Store.",
   "oberry": "A Blockchain tutorial market platform. I as a developer and content writers, researched about Blockchain for the contents of the tutorial, developed a sample DApp, and wrote a tutorial article on Medium. To create a smart contract, we used a language called “Solidity” and used a technology called “Vue.js” to develop the front end.",
-  "bmethod": "A mobile wallet application. People who use this app can send money by app, buy a paid card, and pay at another store. As a mobile developer, I was responsible for iOS mobile development using the language “swift” and deployed the app in the Apple Store.",
+  "bmethod": "This app measures the Japanese level of foreigners working for Japanese companies. For the front front end, we use the language “Vue.js” and deploy it on the server “AWS”.",
   "ffmdate": "February 2013",
   "mlsdate": "March 2013",
   "c2pdate": "January 2013",
