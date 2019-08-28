@@ -15,6 +15,7 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "*", name: 'error', component: PageNotFound },
+  { path: "/", redirect: "/en"},
   { path: '/:lang', name: 'about', component: AboutMe },
   { path: '/:lang/career', name: 'career', component: Career },
   { path: '/:lang/skill', name: 'skill', component: Skill },
