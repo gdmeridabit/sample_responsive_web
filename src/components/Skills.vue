@@ -14,7 +14,7 @@
               lg4
               pa-2
       >
-        <v-card v-if="data !== null" height="100%">
+        <v-card v-if="data !== null" height="100%" data-aos="flip-left">
           <v-card-title class="simple-font font-weight-bold">{{ data.name }}</v-card-title>
           <v-divider></v-divider>
           <v-list dense v-for="(items, index) in data.data" :key="index">

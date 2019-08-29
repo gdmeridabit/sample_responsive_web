@@ -5,7 +5,7 @@
         <span class="font-weight-bold title-font">{{ $t('about_title') }}</span>
       </v-flex>
       <v-flex text-xs-center xs12>
-        <v-avatar size="250" color="grey lighten-4">
+        <v-avatar size="250" color="grey lighten-4" data-aos="flip-right">
           <img
                   src="https://portfolio-gwen.s3.amazonaws.com/50988163_10213734001079444_2817855097181044736_n.jpg"
                   alt="avatar"
@@ -20,7 +20,7 @@
         <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="15%" style="left: 50%"></v-img>
       </v-flex>
     </v-layout>
-    <v-layout align-content justify-center fill-height row wrap class="mb-5">
+    <v-layout align-content justify-center fill-height row wrap class="mb-5" data-aos="fade-up">
       <v-flex xs12 text-xs-center hidden-sm-and-down mb-5>
         <p class="title font-weight-light">The scope of my work is more focus on the frontend:<b> single pages
           apps(MVC,
@@ -139,7 +139,7 @@
       </v-flex>
     </v-layout>
     <v-divider class="mb-5"></v-divider>
-    <v-layout align-content justify-center fill-height row wrap class="my-5">
+    <v-layout align-content justify-center fill-height row wrap class="my-5" data-aos="fade-up">
       <v-flex xs12 text-xs-center mb-5>
         <span class="simple-md-font">Don't be a stranger!</span><br/>
         <span class="title font-weight-light">Feel free to get in touch with me. I am open to discuss new projects and creative ideas or be part of your visions.</span>

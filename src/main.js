@@ -9,6 +9,8 @@ import VueRouter from 'vue-router';
 import i18n from './i18n'
 import '../stylus/main.styl'
 import Others from "./components/Others";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -30,5 +32,8 @@ const router = new VueRouter({
 new Vue({
   render: h => h(App),
   i18n,
-  router
+  router,
+  created () {
+    AOS.init()
+  },
 }).$mount('#app');
