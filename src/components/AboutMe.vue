@@ -14,14 +14,18 @@
         <p class="title font-weight-thin mt-3" v-html="$t('intro')"></p>
       </v-flex>
       <v-flex text-xs-center xs12 mb-5 hidden-sm-and-down>
-        <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="3%" style="left: 50%"></v-img>
+        <a href="#percentage">
+          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="3%" style="left: 50%"></v-img>
+        </a>
       </v-flex>
       <v-flex text-xs-center xs12 hidden-md-and-up>
-        <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="15%" style="left: 50%"></v-img>
+        <a href="#percentage">
+          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="15%" style="left: 50%"></v-img>
+        </a>
       </v-flex>
     </v-layout>
     <v-layout align-content justify-center fill-height row wrap class="mb-5" data-aos="fade-up">
-      <v-flex xs12 text-xs-center hidden-sm-and-down mb-5>
+      <v-flex xs12 text-xs-center hidden-sm-and-down mb-5 id="percentage">
         <p class="title font-weight-light">The scope of my work is more focus on the frontend:<b> single pages
           apps(MVC,
           MVVM), coding layouts, HTML, CSS and Javascript.</b></p>
@@ -141,8 +145,8 @@
     <v-divider class="mb-5"></v-divider>
     <v-layout align-content justify-center fill-height row wrap class="my-5" data-aos="fade-up">
       <v-flex xs12 text-xs-center mb-5>
-        <span class="simple-md-font">Don't be a stranger!</span><br/>
-        <span class="title font-weight-light">Feel free to get in touch with me. I am open to discuss new projects and creative ideas or be part of your visions.</span>
+        <span class="simple-md-font">{{ $t('contactme') }}</span><br/>
+        <span class="title font-weight-light">{{ $t('contact') }}</span>
       </v-flex>
       <v-flex xs12 text-xs-center mb-1>
         <i class="fas fa-envelope" style="font-size: 1.5em"></i>
