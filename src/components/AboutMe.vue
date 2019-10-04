@@ -13,12 +13,14 @@
         <p class="title font-weight-thin mt-3" v-html="$t('intro')"></p>
         <br/>
         <a href="#percentage">
-          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="5%" style="left: 50%"></v-img>
+          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" class="hidden-sm-and-down" width="5%" style="left: 50%"></v-img>
+          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" class="hidden-md-and-up" width="15%" style="left: 50%"></v-img>
+
         </a>
       </v-flex>
     </v-layout>
-    <v-layout justify-center fill-height row wrap id="percentage" style="height: 100vh;">
-      <v-flex xs12 text-xs-center hidden-sm-and-down>
+    <v-layout justify-center fill-height row wrap id="percentage">
+      <v-flex xs12 text-xs-center hidden-sm-and-down mt-5>
         <p class="simple-font font-weight-light">{{ $t('skill') }}</p>
         <v-layout>
           <v-flex lg4 xs12>
@@ -112,7 +114,7 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12 text-xs-center hidden-sm-and-down >
+      <v-flex xs12 text-xs-center hidden-sm-and-down mt-5>
         <p class="simple-font">{{ $t('otherworks') }}</p>
         <a href="https://github.com/gdmeridabit" target="_blank" class="mx-5" data-aos="flip-fade">
           <i class="fab fa-github" style="font-size: 5em"></i>
@@ -137,7 +139,7 @@
         </a>
       </v-flex>
     </v-layout>
-    <v-divider class="mb-5"></v-divider>
+    <v-divider class="my-5"></v-divider>
     <v-layout align-content justify-center fill-height row wrap class="my-5" data-aos="fade-up">
       <v-flex xs12 text-xs-center mb-5>
         <span class="simple-font">{{ $t('contactme') }}</span><br/>
