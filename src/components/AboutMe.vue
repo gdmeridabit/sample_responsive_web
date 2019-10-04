@@ -7,7 +7,7 @@
       <v-flex text-xs-center xs12>
         <v-avatar size="250" color="grey lighten-4" data-aos="flip-right">
           <img
-                  src="https://portfolio-gwen.s3.amazonaws.com/50988163_10213734001079444_2817855097181044736_n.jpg"
+                  :src="avatar"
                   alt="avatar"
           >
         </v-avatar>
@@ -26,9 +26,7 @@
     </v-layout>
     <v-layout align-content justify-center fill-height row wrap class="mb-5" data-aos="fade-up">
       <v-flex xs12 text-xs-center hidden-sm-and-down mb-5 id="percentage">
-        <p class="title font-weight-light">The scope of my work is more focus on the frontend:<b> single pages
-          apps(MVC,
-          MVVM), coding layouts, HTML, CSS and Javascript.</b></p>
+        <p class="simple-font font-weight-light">{{ $t('skill') }}</p>
         <v-layout>
           <v-flex lg4 xs12>
             <v-progress-circular
@@ -75,9 +73,7 @@
         </v-layout>
       </v-flex>
       <v-flex xs12 text-xs-center hidden-md-and-up mb-5>
-        <p class="title font-weight-light">The scope of my work is more focus on the frontend:<b> single pages
-          apps(MVC,
-          MVVM), coding layouts, HTML, CSS and Javascript.</b></p>
+        <p class="simple-font font-weight-light">{{ $t('skill') }}</p>
         <v-layout row wrap>
           <v-flex xs12>
             <v-progress-circular
@@ -145,7 +141,7 @@
     <v-divider class="mb-5"></v-divider>
     <v-layout align-content justify-center fill-height row wrap class="my-5" data-aos="fade-up">
       <v-flex xs12 text-xs-center mb-5>
-        <span class="simple-md-font">{{ $t('contactme') }}</span><br/>
+        <span class="simple-font">{{ $t('contactme') }}</span><br/>
         <span class="title font-weight-light">{{ $t('contact') }}</span>
       </v-flex>
       <v-flex xs12 text-xs-center mb-1>
@@ -166,7 +162,9 @@
 
 <script>
   export default {
-    data: () => ({}),
+    data: () => ({
+      avatar: require("../assets/me.jpg"),
+    }),
     beforeMount() {
       this.$i18n.locale = this.$route.params.lang;
     }
