@@ -84,8 +84,9 @@
           title: 'Portfolio',
           details: 'This portfolio is a showcase of my career, experience and skills.',
           tech: 'Vue.js, Vuetify, Heroku',
-          learning: 'Learning Vue.js, Vuetify, Heroku and learning how to make a site mobile responsive in Vue.js',
-          url: '',
+          learning: 'Learning Vue.js, Vuetify, Heroku and learning how to make a site mobile responsive in Vue.js. ' +
+            'I also making the site localize using i18n.',
+          url: 'https://portfolio-gwen.herokuapp.com/en',
         }
       ],
       dialog: false,
