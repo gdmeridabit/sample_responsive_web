@@ -7,7 +7,7 @@
   "webdev": "Frontend Development",
   "backdev": "Backend Development",
   "mobdev": "Mobile Development",
-  "skill": "The scope of my work is more focus on the frontend:<b> single pages\n          apps(MVC,\n          MVVM), coding layouts, HTML, CSS and Javascript.</b>",
+  "skill": "The scope of my work is more focus on the frontend: single pages\n          apps(MVC,\n          MVVM), coding layouts, HTML, CSS and Javascript.",
   "otherworks": "Have a look at some of my work and articles!",
   "ffm": "Force Field Management (FFM) is a web platform that allows financial institutions to learn more about clients through credit investigation.\nAs a developer, I'm in charge on the front end of the platform. In this project, we used Spring MVC technology to develop a front end.",
   "mls": "Mobile Loan Saver is a loan platform for financial institutions that lend money to government employees.\nWe used Groovy and Grails technology for quick and easy front-end development. We also used Groovy and Grails to create a web service that integrates the database and front end.",

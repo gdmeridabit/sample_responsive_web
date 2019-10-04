@@ -1,10 +1,9 @@
 <template>
   <v-container fluid>
-    <v-layout row wrap align-content justify-center fill-height id="about" style="height: 100vh;">
+    <v-layout row wrap justify-center fill-height id="about" style="height: 100vh;">
       <v-flex text-xs-center xs12>
         <span class="font-weight-bold title-font">{{ $t('about_title') }}</span>
-      </v-flex>
-      <v-flex text-xs-center xs12>
+        <br/>
         <v-avatar size="250" color="grey lighten-4" data-aos="flip-right">
           <img
                   :src="avatar"
@@ -12,20 +11,14 @@
           >
         </v-avatar>
         <p class="title font-weight-thin mt-3" v-html="$t('intro')"></p>
-      </v-flex>
-      <v-flex text-xs-center xs12 mb-5 hidden-sm-and-down>
+        <br/>
         <a href="#percentage">
-          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="3%" style="left: 50%"></v-img>
-        </a>
-      </v-flex>
-      <v-flex text-xs-center xs12 hidden-md-and-up>
-        <a href="#percentage">
-          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="15%" style="left: 50%"></v-img>
+          <v-img src="https://media0.giphy.com/media/WoztRT1FFeliwstmao/giphy.gif" width="5%" style="left: 50%"></v-img>
         </a>
       </v-flex>
     </v-layout>
-    <v-layout align-content justify-center fill-height row wrap class="mb-5" data-aos="fade-up">
-      <v-flex xs12 text-xs-center hidden-sm-and-down mb-5 id="percentage">
+    <v-layout justify-center fill-height row wrap id="percentage" style="height: 100vh;">
+      <v-flex xs12 text-xs-center hidden-sm-and-down>
         <p class="simple-font font-weight-light">{{ $t('skill') }}</p>
         <v-layout>
           <v-flex lg4 xs12>
@@ -36,6 +29,7 @@
                     :rotate="360"
                     color="orange darken-2"
                     class="mb-2"
+                    data-aos="flip-right"
             >
               <span class="headline">80%</span>
             </v-progress-circular>
@@ -50,8 +44,9 @@
                     :rotate="360"
                     color="teal accent-3"
                     class="mb-2"
+                    data-aos="flip-right"
             >
-              <span class="headline">60%</span>
+              <span class="headline" data-aos="flip-fade">60%</span>
             </v-progress-circular>
             <br/>
             <span class="title">{{ $t('backdev') }}</span>
@@ -64,8 +59,9 @@
                     :rotate="360"
                     color="red accent-2"
                     class="mb-2"
+                    data-aos="flip-right"
             >
-              <span class="headline">60%</span>
+              <span class="headline" data-aos="flip-fade">60%</span>
             </v-progress-circular>
             <br/>
             <span class="title">{{ $t('mobdev') }}</span>
@@ -82,6 +78,7 @@
                     :width="25"
                     color="orange darken-2"
                     class="mb-2"
+                    data-aos="flip-right"
             >80
             </v-progress-circular>
             <br/>
@@ -94,6 +91,7 @@
                     :width="25"
                     color="teal accent-3"
                     class="mb-2"
+                    data-aos="flip-right"
             >60
             </v-progress-circular>
             <br/>
@@ -106,6 +104,7 @@
                     :width="25"
                     color="red accent-2"
                     class="mb-2"
+                    data-aos="flip-right"
             >60
             </v-progress-circular>
             <br/>
@@ -113,27 +112,27 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12 text-xs-center hidden-sm-and-down mt-5>
+      <v-flex xs12 text-xs-center hidden-sm-and-down >
         <p class="simple-font">{{ $t('otherworks') }}</p>
-        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-5">
+        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-5" data-aos="flip-fade">
           <i class="fab fa-github" style="font-size: 5em"></i>
         </a>
-        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-5">
+        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-5" data-aos="flip-fade">
           <i class="fas fa-i-cursor" style="font-size: 5em"></i>
         </a>
-        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-5">
+        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-5" data-aos="flip-fade">
           <i class="fab fa-medium-m" style="font-size: 5em"></i>
         </a>
       </v-flex>
       <v-flex xs12 text-xs-center hidden-md-and-up mt-5>
         <p class="simple-font">{{ $t('otherworks') }}</p>
-        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-4">
+        <a href="https://github.com/gdmeridabit" target="_blank" class="mx-4" data-aos="flip-fade">
           <i class="fab fa-github" style="font-size: 4em"></i>
         </a>
-        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-4">
+        <a href="https://qiita.com/gwenmerida" target="_blank" class="mx-4" data-aos="flip-fade">
           <i class="fas fa-i-cursor grey--text" style="font-size: 4em"></i>
         </a>
-        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-4">
+        <a href="https://medium.com/@gdmerida.bit" target="_blank" class="mx-4" data-aos="flip-fade">
           <i class="fab fa-medium-m grey--text" style="font-size: 4em"></i>
         </a>
       </v-flex>

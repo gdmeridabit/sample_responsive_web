@@ -47,6 +47,6 @@ export default {
   }
   .simple-font {
     font-family: 'Caveat', 'M PLUS Rounded 1c', sans-serif, cursive;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 </style>

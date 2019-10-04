@@ -78,6 +78,14 @@
           tech: 'React Native, Expo, Nodejs, express, web3, Ganache, Github',
           learning: 'Learned React Native, Nodejs and things about blockchain',
           url: '',
+        },
+        {
+          img: require('../assets/portfolio.png'),
+          title: 'Portfolio',
+          details: 'This portfolio is a showcase of my career, experience and skills.',
+          tech: 'Vue.js, Vuetify, Heroku',
+          learning: 'Learning Vue.js, Vuetify, Heroku and learning how to make a site mobile responsive in Vue.js',
+          url: '',
         }
       ],
       dialog: false,
