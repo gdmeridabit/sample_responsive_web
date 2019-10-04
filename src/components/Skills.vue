@@ -142,7 +142,7 @@
           data: [
             {
               name: 'Git',
-              value: 90
+              value: 80
             },
             {
               name: 'SVN',
